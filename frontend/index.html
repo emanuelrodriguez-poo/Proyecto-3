@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SITP Fontibón</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Estaciones SITP en Fontibón</h2>
+
+<button onclick="mostrarMapa()">Mapa</button>
+<button onclick="mostrarSitp()">SITP</button>
+
+<select id="menu" onchange="mostrarInfo()">
+<option>Información general</option>
+<option>Estaciones SITP</option>
+<option>Análisis</option>
+</select>
+
+<div id="map"></div>
+
+<div id="panel"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
